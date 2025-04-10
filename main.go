@@ -622,7 +622,7 @@ func createDepositDatasCmd() *cobra.Command {
 				data := common.DepositData{
 					Pubkey:                pub,
 					WithdrawalCredentials: withdrCreds,
-					Amount:                common.Gwei(1024000000000),
+					Amount:                common.Gwei(100000000000000),
 					Signature:             common.BLSSignature{},
 				}
 				msgRoot := data.ToMessage().HashTreeRoot(tree.GetHashFn())
